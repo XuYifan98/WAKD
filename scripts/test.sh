@@ -5,7 +5,7 @@ GPUS=4
 RESUME=$1
 ARCH=${2-vgg16}
 DATASET=${3-pitts}
-SCALE=${4-30k}
+SCALE=${4-250k}
 
 if [ $# -lt 1 ]
   then
