@@ -92,7 +92,7 @@ Format:
 ```shell
 bash scripts/test.sh resume arch dataset scale
 ```
-where, resume is the trained model path, 
+where, resume is the trained model path.
        arch is the backbone name, such as vgg16, mobilenetv3_large and resnet152.
        dataset scale, such as pitts 30k and pitts 250k.
 
