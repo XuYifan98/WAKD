@@ -74,7 +74,7 @@ Format:
 bash scripts/train_wakd_st.sh arch archT
 ```
 where, **arch** is the backbone name, such as mobilenetv3_large.
-       archT is the teacher backbone name, such as vgg16.
+       **archT** is the teacher backbone name, such as vgg16.
 
 For example:
 ```shell
@@ -92,9 +92,9 @@ Format:
 ```shell
 bash scripts/test.sh resume arch dataset scale
 ```
-where, resume is the trained model path.
-       arch is the backbone name, such as vgg16, mobilenetv3_large and resnet152.
-       dataset scale, such as pitts 30k and pitts 250k.
+where, **resume** is the trained model path.
+       **arch** is the backbone name, such as vgg16, mobilenetv3_large and resnet152.
+       **dataset scale**, such as pitts 30k and pitts 250k.
 
 For example:
 1. Test mobilenetv3_large on pitts 250k:
