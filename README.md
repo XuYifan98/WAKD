@@ -73,7 +73,7 @@ Format:
 ```shell
 bash scripts/train_wakd_st.sh arch archT
 ```
-where, arch is the backbone name, such as mobilenetv3_large.
+where, **arch** is the backbone name, such as mobilenetv3_large.
        archT is the teacher backbone name, such as vgg16.
 
 For example:
