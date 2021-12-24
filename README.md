@@ -53,7 +53,7 @@ logs
 └── mobilenetv3_large_pitts_64_desc_cen.hdf5
 ```
 
-**(1) ImageNet-pretrained weights for CNNs backbone
+**(1) ImageNet-pretrained weights for CNNs backbone**
 
 The ImageNet-pretrained weights for CNNs backbone or the pretrained weights for the whole model.
 
