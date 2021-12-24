@@ -105,7 +105,7 @@ bash scripts/test.sh logs/netVLAD/pitts30k-mobilenetv3_large/model_best.pth.tar 
 ```shell
 bash scripts/test.sh logs/netVLAD/pitts30k-vgg16/model_best.pth.tar model_best.pth.tar vgg16 tokyo
 ```
-In the test_dist.sh.
+In the test.sh.
 In case you want to fasten testing, enlarge GPUS for more GPUs, or enlarge the --test-batch-size for larger batch size on one GPU.
 In case your GPU does not have enough memory, reduce --test-batch-size for smaller batch size on one GPU.
 
