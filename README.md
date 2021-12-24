@@ -78,7 +78,7 @@ where, arch is the backbone name, such as mobilenetv3_large.
 
 For example:
 ```shell
-bash scripts/train_sfrs_dist.sh mobilenetv3_large vgg16
+bash scripts/train_wakd_st.sh mobilenetv3_large vgg16
 ```
 
 In the train_wakd_st.sh.
