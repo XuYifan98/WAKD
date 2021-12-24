@@ -47,6 +47,7 @@ def get_model(args):
     model = nn.DataParallel(model)
     return model
 
+
 def main():
     args = parser.parse_args()
 
@@ -59,6 +60,7 @@ def main():
 
     main_worker(args)
 
+    
 def main_worker(args):
     cudnn.benchmark = True
 
@@ -122,6 +124,7 @@ def main_worker(args):
         h5.create_dataset('centroids', data=kmeans.cluster_centers_)
         print('====> Done!')
 
+        
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="VLAD centers initialization clustering")
     # data
