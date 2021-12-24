@@ -65,3 +65,43 @@ The original cluster centers provided by NetVLAD or self-computed cluster center
 ```shell
 ./scripts/cluster.sh mobilenetv3_large
 ```
+
+## Training
+Train by running script in the terminal. Script location: scripts/train_wakd_st.sh
+
+Format:
+```shell
+bash scripts/train_wakd_st.sh arch archT
+```
+where, arch is the backbone name, such as mobilenetv3_large.
+       archT is the teacher backbone name, such as vgg16.
+
+For example:
+```shell
+bash scripts/train_sfrs_dist.sh mobilenetv3_large vgg16
+```
+
+In the train_wakd_st.sh.
+In case you want to fasten testing, enlarge GPUS for more GPUs, or enlarge the --tuple-size for more tuples on one GPU.
+In case your GPU does not have enough memory, reduce --pos-num or --neg-num for fewer positives or negatives in one tuple.
+
+## Testing
+Test by running script in the terminal. Script location: scripts/test.sh
+
+Format:
+```shell
+bash scripts/test.sh resume arch dataset scale
+```
+where, resume is the trained model path, 
+       arch is the backbone name, such as vgg16, mobilenetv3_large and resnet152.
+       dataset scale, such as pitts 30k and pitts 250k.
+
+For example:
+1. Test mobilenetv3_large on pitts 250k:
+```shell
+bash scripts/test.sh logs/netVLAD/pitts30k-mobilenetv3_large/model_best.pth.tar mobilenetv3_large pitts 250k
+```
+2. Test vgg16 on tokyo:
+```shell
+bash scripts/test.sh logs/netVLAD/pitts30k-vgg16/model_best.pth.tar model_best.pth.tar vgg16 tokyo
+```
