@@ -105,3 +105,11 @@ bash scripts/test.sh logs/netVLAD/pitts30k-mobilenetv3_large/model_best.pth.tar 
 ```shell
 bash scripts/test.sh logs/netVLAD/pitts30k-vgg16/model_best.pth.tar model_best.pth.tar vgg16 tokyo
 ```
+In the test_dist.sh.
+In case you want to fasten testing, enlarge GPUS for more GPUs, or enlarge the --test-batch-size for larger batch size on one GPU.
+In case your GPU does not have enough memory, reduce --test-batch-size for smaller batch size on one GPU.
+
+## Acknowledgements
+We truely thanksful of the following two piror works. Particularly, part of the code is inspired by [[pytorch-NetVlad]]
++ NetVLAD: CNN architecture for weakly supervised place recognition (CVPR'16) [[paper]](https://arxiv.org/abs/1511.07247) [[pytorch-NetVlad]](https://github.com/Nanne/pytorch-NetVlad)
++ SARE: Stochastic Attraction-Repulsion Embedding for Large Scale Image Localization (ICCV'19) [[paper]](https://arxiv.org/abs/1808.08779) [[official code]](https://github.com/Liumouliu/deepIBL)
