@@ -112,4 +112,4 @@ In case your GPU does not have enough memory, reduce --test-batch-size for small
 ## Acknowledgements
 We truely thanksful of the following two piror works. Particularly, part of the code is inspired by [[pytorch-NetVlad]](https://github.com/Nanne/pytorch-NetVlad)
 + NetVLAD: CNN architecture for weakly supervised place recognition (CVPR'16) [[paper]](https://arxiv.org/abs/1511.07247) [[pytorch-NetVlad]](https://github.com/Nanne/pytorch-NetVlad)
-+ SARE: Stochastic Attraction-Repulsion Embedding for Large Scale Image Localization (ICCV'19) [[paper]](https://arxiv.org/abs/1808.08779) [[official code]](https://github.com/Liumouliu/deepIBL)
++ SARE: Stochastic Attraction-Repulsion Embedding for Large Scale Image Localization (ICCV'19) [[paper]](https://arxiv.org/abs/1808.08779) [[deepIBL]](https://github.com/Liumouliu/deepIBL)
