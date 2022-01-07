@@ -8,7 +8,7 @@ setup(name='WAKD',
       url='https://github.com/XuYifan98/WAKD',
       license='MIT',
       install_requires=[
-          'numpy', 'torch', 'torchvision',
+          'numpy', 'torch', 'torchvision', 'opencv-python',
           'six', 'h5py', 'Pillow', 'scipy',
           'scikit-learn', 'metric-learn'],
       packages=find_packages(),
